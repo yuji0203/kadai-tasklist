@@ -3,7 +3,7 @@
     <aside class="col-sm-4">
       <%= form_with(model: @task) do |f| %>
         <div class="mb-3">
-        <%= render 'form', task: @task %>
+        <!--<%= render 'form', task: @task %>-->
         </div>
 
       <% end %>
@@ -17,6 +17,7 @@
     <li><%= link_to task.id, task %> : <%= task.status %> &gt; <%= task.content %></li>
   <% end %>
 </ul>
+<%= link_to '新規タスクの投稿', new_task_path %>
 <% else %>
 
 
